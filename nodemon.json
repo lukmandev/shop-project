@@ -1,0 +1,15 @@
+{
+    "ignore": [
+        "public/", 
+        "fixtures/*",
+        "styles/",
+        "utils/",
+        "pages/",
+        ".next/",
+        "http/",
+        "redux/",
+        "constants/",
+        "components/",
+        "assets/"
+    ]
+  }

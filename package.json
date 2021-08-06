@@ -5,16 +5,52 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "nodemon ./server/app.js",
     "lint": "next lint"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "public/*", 
+        "fixtures/*",
+        "styles/*",
+        "utils/*",
+        "pages/*",
+        ".next/*",
+        "http/*",
+        "redux/*",
+        "constants/*",
+        "components/*",
+        "assets/*"
+    ]
+  },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.1",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "email-existence": "^0.1.6",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.2",
+    "mongoose-double": "^0.0.1",
     "next": "11.0.1",
+    "next-redux-wrapper": "^7.0.2",
+    "nodemailer": "^6.6.3",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-countdown": "^2.3.2",
+    "react-dom": "17.0.2",
+    "react-input-mask": "^2.0.4",
+    "react-redux": "^7.2.4",
+    "swiper": "^6.7.5",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
+    "@types/node": "^16.4.10",
+    "@types/react": "^17.0.15",
+    "dotenv": "^10.0.0",
     "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1"
+    "eslint-config-next": "11.0.1",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.3.5"
   }
 }
